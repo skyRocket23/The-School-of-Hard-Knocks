@@ -1,0 +1,9 @@
+GET http://localhost:5000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmlnbWV0IiwiaWF0IjoxNjgwNzgxMTQ1LCJleHAiOjE2ODA3ODEyOTV9.7fddRoaLJhMw7sHFkewVrF7NCO6fS58whr3StF_Kv28
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username":"Jigmet"
+}
