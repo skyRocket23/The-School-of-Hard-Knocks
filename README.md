@@ -5,10 +5,13 @@ I am a passionate learner and love to explore new technologies. With each projec
 
 Here are some of the technologies that I have been working on:
 
-## UnderstandingOAuth: This branch showcases my knowledge and understanding of OAuth authentication. It includes a project where I have integrated OAuth with a web application.
+## UnderstandingOAuth: 
+This branch showcases my knowledge and understanding of OAuth authentication. It includes a project where I have integrated OAuth with a web application.
 
-## ReactShoppingCart: This branch highlights my experience with React and building a shopping cart application. It includes features such as adding items to the cart, updating the quantity, and checking out.
+## ReactShoppingCart: 
+This branch highlights my experience with React and building a shopping cart application. It includes features such as adding items to the cart, updating the quantity, and checking out.
 
-## NodeExpressAPI: This branch showcases my knowledge of building APIs with Node.js and Express. It includes a simple REST API that allows users to create, read, update, and delete records.
+## NodeExpressAPI: 
+This branch showcases my knowledge of building APIs with Node.js and Express. It includes a simple REST API that allows users to create, read, update, and delete records.
 
 I am constantly learning and updating my skills. Follow me on my journey as I explore new technologies and improve my skills as a developer.
