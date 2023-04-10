@@ -1,11 +1,11 @@
-// store.js
-
 import { createStore } from 'redux';
-import { BUY_CAKE,BUY_ICECREAM } from './Constant';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { BUY_CAKE, BUY_ICECREAM } from './Constant';
 
 const initialState = {
     icecreamLeft: 50,
-    cakeLeft: 20
+    cakeLeft: 20,
+    pineappleLeft:50
 };
 
 function counter(state = initialState, action) {
@@ -25,6 +25,10 @@ function counter(state = initialState, action) {
     }
 }
 
-const store = createStore(counter);
+
+const store = createStore(
+    counter, 
+    composeWithDevTools()
+);
 
 export default store;
