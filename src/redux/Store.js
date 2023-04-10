@@ -1,6 +1,10 @@
-import { createStore } from 'redux';
+import { createStore,applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import logger from 'redux-logger';
 import { BUY_CAKE, BUY_ICECREAM } from './Constant';
+
+
+const middleware = [logger];
 
 const initialState = {
     icecreamLeft: 50,
@@ -13,12 +17,12 @@ function counter(state = initialState, action) {
         case BUY_ICECREAM:
             return {
                 ...state,
-                icecreamLeft: state.icecreamLeft - 1
+                icecreamLeft: state.icecreamLeft - action.payload
             };
         case BUY_CAKE:
             return {
                 ...state,
-                cakeLeft: state.cakeLeft - 1
+                cakeLeft: state.cakeLeft - action.payload
             };
         default:
             return state;
@@ -27,8 +31,10 @@ function counter(state = initialState, action) {
 
 
 const store = createStore(
-    counter, 
-    composeWithDevTools()
+    counter,
+    composeWithDevTools(
+        applyMiddleware(...middleware)
+    )
 );
 
 export default store;

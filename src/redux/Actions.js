@@ -2,14 +2,16 @@
 
 import { BUY_ICECREAM, BUY_CAKE } from './Constant';
 
-export const buyIceCream = () => {
+export const buyIceCream = (x) => {
     return {
-        type: BUY_ICECREAM
+        type: BUY_ICECREAM,
+        payload:x
     };
 };
 
-export const buyCake = () => {
+export const buyCake = (x) => {
     return {
-        type: BUY_CAKE
+        type: BUY_CAKE,
+        payload:x
     };
 };

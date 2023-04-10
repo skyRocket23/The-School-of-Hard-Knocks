@@ -12,9 +12,9 @@ function App() {
     return (
         <div>
             <h2>Ice Creams: {iceCreams}</h2>
-            <button onClick={() => dispatch(buyIceCream())}>Buy Ice Cream</button>
+            <button onClick={() => dispatch(buyIceCream(2))}>Buy Ice Cream</button>
             <h2>Cakes: {cakes}</h2>
-            <button onClick={() => dispatch(buyCake())}>Buy Cake</button>
+            <button onClick={() => dispatch(buyCake(3))}>Buy Cake</button>
         </div>
     );
 }
