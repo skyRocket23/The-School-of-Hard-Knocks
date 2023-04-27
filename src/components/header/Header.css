@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: rgb(254, 252, 253);
+    position: sticky;
+    top: 0;
+    max-height: calc(100vh - 70px);
+    /* Set a maximum height of 100% of the viewport height minus the height of the header */
+}
+
+.header__left{
+    display: flex;
+    align-items: center;
+}
+
+.header__left > li{
+    position: relative;
+    left:67px;
+    list-style: none;
+    /* margin-left:15px; */
+    font-size: 39px;
+    font-family: 'Ysabeau', sans-serif;
+    color:rgb(223, 72, 59);
+}
+
+
+.header__left > img{
+    position: relative;
+    left:57px;
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+}
+
+.header__right > ul {
+    display: flex;
+}
+
+.header__right > ul > li {
+    display: flex;
+    align-items: center;
+    height:20px;
+    margin:10px;
+    padding: 10px;
+    font-family: 'Ysabeau', sans-serif;
+    
+}
+
+.header__right>ul>li:hover {
+    background-color: rgb(241, 238, 235);
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.header__right > button{
+    padding: 9px 14px 9px 14px;
+    height:38px;
+    width: 127px;
+    border-radius: 8px;
+    border:none;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: rgb(223, 72, 59);
+}

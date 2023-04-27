@@ -1,0 +1,9 @@
+*{
+  margin:0;
+}
+
+.app{
+  /* height: 5000px; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
